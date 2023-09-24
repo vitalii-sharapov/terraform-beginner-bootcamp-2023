@@ -245,3 +245,32 @@ If you lose this file, you lose knowing the state of your infrastructure.
 
 `.terraform` directory contains binaries of terraform providers.
 
+## Issues with Terraform Cloud Login and Gitpod Workspace
+
+When attempting to run `terraform login` it will launch bash a wiswig view to generate a token.
+However it does not work as expected in Gitpod VSCode in the browser.
+
+The workaround is manually generate a toke in Terraform Cloud
+
+```
+https://app.terraform.io/app/settings/tokens?source=terraform-login
+```
+
+In Gipod VSCode in the browser hit `q` to quit and system will prompt you to enter token value,
+where just right click on mouse and click in prompted window `Allow` to paste in browser. 
+This will paste token. Hit `Enter` and credentials will be processed.
+
+
+## Github CLI and resolvers 
+
+In the event when the labor started without creating new issue and work was going on in main branch,
+in order to switch added or changed data from main branch to new branch follow these steps:
+```
+git pull                    # Use pull to make sure all data is loaded here
+git fetch                   # double check its loaded, always good since we already screwed this
+git stash save              # This command will save all data that was applied in VSCode, but **yet not committed to main**
+git checkout new-branch     
+git stash apply             # Will Apply data that was saved to a new branch instead of main
+```
+
+[`git stash` Documentation](https://git-scm.com/docs/git-stash)
