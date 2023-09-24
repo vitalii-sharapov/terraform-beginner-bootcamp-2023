@@ -270,6 +270,11 @@ This is the screen you will see once all done!
 ![Welcome text from Terraform upon successful login using token](https://github.com/vitalii-sharapov/terraform-beginner-bootcamp-2023/assets/90422092/4998778e-814d-4be9-ae5a-1eabc36cbce5)
 
 
+We have automated this workaround with the following bash script [bin/generate_tfrc_credentials](bin/generate_tfrc_credentials)
+
+
+
+
 ## Github CLI and resolvers 
 
 In the event when the labor started without creating new issue and work was going on in main branch,
