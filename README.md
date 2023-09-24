@@ -250,22 +250,31 @@ If you lose this file, you lose knowing the state of your infrastructure.
 When attempting to run `terraform login` it will launch bash a wiswig view to generate a token.
 However it does not work as expected in Gitpod VSCode in the browser.
 
-The workaround is manually generate a toke in Terraform Cloud
+The workaround is manually generate a token in Terraform Cloud
 
 ```
 https://app.terraform.io/app/settings/tokens?source=terraform-login
 ```
 
-In Gipod VSCode in the browser hit `q` to quit and system will prompt you to enter token value,
-where just right click on mouse and click in prompted window `Allow` to paste in browser. 
+In Gitpod VSCode in the browser, type `terraform login`, screen will become black with some options represented,
+click `p`, the link to generate new token will be shown. Use link to generate new token, copy it.
+Return to Gitpod, hit `q` to quit and system will prompt you to enter token value, see screen below where to enter new token:
+
+![Paste token generated in Terraform Cloud](https://github.com/vitalii-sharapov/terraform-beginner-bootcamp-2023/assets/90422092/198a52ac-1096-4fc3-875c-47f7cbf17a1a)
+
+Right click on mouse and click in prompted window `Allow` to paste in browser. 
 This will paste token. Hit `Enter` and credentials will be processed.
+
+This is the screen you will see once all done!
+
+![Welcome text from Terraform upon successful login using token](https://github.com/vitalii-sharapov/terraform-beginner-bootcamp-2023/assets/90422092/4998778e-814d-4be9-ae5a-1eabc36cbce5)
 
 
 ## Github CLI and resolvers 
 
 In the event when the labor started without creating new issue and work was going on in main branch,
 in order to switch added or changed data from main branch to new branch follow these steps:
-```
+```sh
 git pull                    # Use pull to make sure all data is loaded here
 git fetch                   # double check its loaded, always good since we already screwed this
 git stash save              # This command will save all data that was applied in VSCode, but **yet not committed to main**
