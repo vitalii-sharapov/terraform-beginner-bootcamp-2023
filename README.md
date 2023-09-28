@@ -1,6 +1,6 @@
 # Terraform Beginner Bootcamp 2023
 
-![Architectural Diagram](https://github.com/vitalii-sharapov/terraform-beginner-bootcamp-2023/assets/90422092/9fbe7072-1df5-4099-8491-9d6d831e9d0d)
+![Architectural Diagram](https://github.com/vitalii-sharapov/terraform-beginner-bootcamp-2023/assets/90422092/beb0bde7-242d-4d3b-a171-57f65e7f0c2d)
 
 
 ## Weekly Journals
