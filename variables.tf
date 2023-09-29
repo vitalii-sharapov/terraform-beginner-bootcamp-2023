@@ -6,3 +6,8 @@ variable "user_uuid" {
     error_message    = "The user_uuid value is not a valid UUID."
   }
 }
+
+variable "bucket_name" {
+  description   = "Bucket name after drift fix"
+  type        = string
+}
