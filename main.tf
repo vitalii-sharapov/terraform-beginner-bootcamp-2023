@@ -5,13 +5,13 @@ terraform {
       version = "1.0.0"
     }
   }
-  #cloud {
-  #  organization = "Vitalii-Sharapov"
-  #
-  #  workspaces {
-  #    name = "terra-house-1"
-  #  }
-  #}
+  cloud {
+    organization = "Vitalii-Sharapov"
+  
+    workspaces {
+      name = "terra-house-1"
+    }
+  }
 }
 
 provider "terratowns" {
