@@ -31,7 +31,7 @@ provider "terratowns" {
 #}
 
 resource "terratowns_home" "home" {
-  name = "Play Factorio!"
+  name = "Let's play Factorio!"
   description = <<DESCRIPTION
 Factorio is a construction and management simulation game developed and published by Czech studio Wube Software.
 DESCRIPTION
